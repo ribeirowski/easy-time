@@ -8,12 +8,16 @@
     "dev": "tsx watch src/server.ts",
     "prod": "node build/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
+    "migrate": "prisma migrate dev",
+    "generate": "prisma generate",
+    "studio": "prisma studio"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "6.4.1",
     "dotenv": "^16.4.7",
     "fastify": "^5.2.1",
     "zod": "^3.24.2"
@@ -26,6 +30,7 @@
     "eslint-plugin-prettier": "^5.2.3",
     "globals": "^16.0.0",
     "prettier": "^3.5.3",
+    "prisma": "^6.4.1",
     "tsup": "^8.4.0",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2",
